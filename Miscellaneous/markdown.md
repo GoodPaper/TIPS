@@ -8,5 +8,14 @@
 <span style="color:red">blah blah...</span>
 ```
 
-#### Cheatsheets
-* https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+#### Keyboard button
+* <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Space</kbd>
+```html
+<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Space</kbd>
+```
+
+#### Reference
+* Cheatsheets
+  * https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+* code block supported language
+  * https://www.rubycoloredglasses.com/2013/04/languages-supported-by-github-flavored-markdown/
