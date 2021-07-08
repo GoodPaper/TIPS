@@ -19,3 +19,11 @@
 /path/of/binary /path/of/script.py *args %*
 pause
 ```
+
+#### Linux의 tail과 같은 명령어를 사용하고 싶다. ( Trace log )
+* powershell -> Get-Content 명령어를 이용한다.
+    - https://yuien.tistory.com/entry/Windows-%EC%9C%88%EB%8F%84%EC%9A%B0%EC%97%90%EC%84%9C-Tail-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%82%AC%EC%9A%A9-%EB%B0%A9%EB%B2%95
+```batch
+# Wait은 -f 옵션과 동일하게 following 수행.
+$ Get-Content {path} -Wait
+```
