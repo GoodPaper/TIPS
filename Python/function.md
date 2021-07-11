@@ -1,6 +1,8 @@
-# 함수
+# function, method
 
-### 함수의 인자로 넘길 수 있는 데이터가 가변적인 경우 -> Asterisks을 사용한다. 튜플로 인식된다.
+### args, kwargs
+* https://www.learnpython.org/en/Multiple_Function_Arguments
+* https://stackoverflow.com/questions/36901/what-does-double-star-asterisk-and-star-asterisk-do-for-parameters
 ```python
 def foo(first, second, third, *therest):
     print("First: %s" % first)
@@ -17,6 +19,31 @@ And all the rest... [4, 5]
 <class 'tuple'>
 ```
 
-### 참조
-* https://www.learnpython.org/en/Multiple_Function_Arguments
-* https://stackoverflow.com/questions/36901/what-does-double-star-asterisk-and-star-asterisk-do-for-parameters
+### decorator
+Sort of method wrapper
+* http://abh0518.net/tok/?p=604
+```python
+import time
+
+def how_long_does_it_take( func ):
+
+    def wrapper( *args, **kwargs ):
+
+        a = time.time()
+        b = func( *args, **kwargs )
+        return b, time.time() - a
+
+    return wrappe
+
+@how_long_does_it_take
+def dummy():
+
+    time.sleep( 3.0 )
+    return 1
+
+
+if __name__ == '__main__':
+
+    rest, elapsed = dummy()
+    print( rest, elapsed )
+```

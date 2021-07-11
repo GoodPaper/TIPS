@@ -67,6 +67,15 @@ a[:-n]       # 맨 뒤의 item n개 빼고 전부
 >>>
 ```
 
+### 여러 개의 list를 1개의 list로 merge하고 싶다.
+* itertools, chain
+    - https://stackoverflow.com/questions/11574195/how-to-merge-multiple-lists-into-one-list-in-python
+```python
+import itertools
+a = itertools.chain( [ 'it' ], [ 'was' ], [ 'nothing...' ] )
+list( a )
+```
+
 ### 기타
 * list와 tuple의 차이: mutable, hash
 
