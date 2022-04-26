@@ -115,6 +115,8 @@ $ docker run --restart=always redis
 * [LINK 1](https://docs.docker.com/engine/reference/run/#restart-policies---restart)
 * [LINK 2](https://jamesu.dev/posts/2019/12/19/starting-container-automatically/)
 
+<br/>
+
 ## Working directory( -w )
 ```bash
 $ docker run --rm -it -w /home/whoami/oneoff someofimage:version /bin/bash
